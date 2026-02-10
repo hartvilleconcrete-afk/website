@@ -27,11 +27,13 @@ export const BiddioLogo = ({
       />
       
       {/* Play button in the center of B */}
-      <circle cx="50" cy="50" r="16" fill="#0a0a0a" opacity="0.9"/>
-      <polygon 
-        points="46,42 46,58 60,50" 
-        fill="#f5a623"
-      />
+      <g aria-label="Play button icon">
+        <circle cx="50" cy="50" r="16" fill="#0a0a0a" opacity="0.9"/>
+        <polygon 
+          points="46,42 46,58 60,50" 
+          fill="#f5a623"
+        />
+      </g>
     </svg>
     {showText && (
       <span className={`font-bold ${textClass}`} style={{ color: '#f5a623' }}>
