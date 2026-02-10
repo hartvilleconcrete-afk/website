@@ -730,6 +730,104 @@
             font-weight: 500;
         }
 
+        /* Video Ad Section */
+        .video-ad-section {
+            padding: 6rem 4rem;
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+            text-align: center;
+            position: relative;
+            border-top: 1px solid rgba(245, 166, 35, 0.2);
+            border-bottom: 1px solid rgba(245, 166, 35, 0.2);
+        }
+
+        .video-ad-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .video-ad-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .video-ad-subtitle {
+            font-size: 1.1rem;
+            color: var(--color-text-muted);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .video-ad-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            background: rgba(245, 166, 35, 0.05);
+            border: 2px solid var(--color-accent);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 
+                0 10px 40px rgba(245, 166, 35, 0.3),
+                0 5px 20px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .video-ad-wrapper:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                0 15px 50px rgba(245, 166, 35, 0.4),
+                0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .video-ad-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
+        }
+
+        .video-ad-icon {
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.6;
+        }
+
+        .video-ad-text {
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .video-ad-description {
+            font-size: 1rem;
+            color: var(--color-text-muted);
+            max-width: 400px;
+            padding: 0 2rem;
+        }
+
+        .video-ad-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: none;
+        }
+
         /* CTA Section */
         .cta-section {
             padding: 8rem 4rem;
@@ -1128,6 +1226,27 @@
                 padding: 4rem 2rem;
             }
 
+            .video-ad-section {
+                padding: 4rem 2rem;
+            }
+
+            .video-ad-title {
+                font-size: 1.8rem;
+            }
+
+            .video-ad-subtitle {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .video-ad-icon {
+                font-size: 3rem;
+            }
+
+            .video-ad-text {
+                font-size: 1.2rem;
+            }
+
             .cta-content h2 {
                 font-size: 2.5rem;
             }
@@ -1378,6 +1497,32 @@
         </div>
     </section>
 
+    <!-- Video Ad Section -->
+    <section class="video-ad-section">
+        <div class="video-ad-container">
+            <h2 class="video-ad-title">Featured Video</h2>
+            <p class="video-ad-subtitle">Learn more about Biddio and how we're revolutionizing the contractor bidding industry</p>
+            
+            <div class="video-ad-wrapper">
+                <!-- Placeholder for video ad - will be replaced when video is ready -->
+                <div class="video-ad-placeholder" id="videoAdPlaceholder">
+                    <div class="video-ad-icon">🎬</div>
+                    <div class="video-ad-text">Video Coming Soon</div>
+                    <p class="video-ad-description">This space is reserved for an exciting video about Biddio's innovative platform</p>
+                </div>
+                
+                <!-- Video iframe - hidden by default, shown when video URL is added -->
+                <iframe 
+                    id="videoAdIframe"
+                    class="video-ad-iframe" 
+                    src="" 
+                    title="Biddio Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
 
     <!-- CTA Section / Beta Signup -->
     <section id="download" class="cta-section">
@@ -1557,5 +1702,28 @@
         // Initial call
         updateCountdown();
     </script>
+
+    <!-- Video Ad Helper Script -->
+    <!-- To add a video, uncomment this section and replace VIDEO_URL with your video URL
+    <script>
+        // Example for YouTube: 'https://www.youtube.com/embed/YOUR_VIDEO_ID'
+        // Example for Vimeo: 'https://player.vimeo.com/video/YOUR_VIDEO_ID'
+        // Example for direct MP4: Set src and use <video> tag instead of iframe
+        
+        function loadVideoAd(videoUrl) {
+            const placeholder = document.getElementById('videoAdPlaceholder');
+            const iframe = document.getElementById('videoAdIframe');
+            
+            if (videoUrl && videoUrl.length > 0) {
+                iframe.src = videoUrl;
+                iframe.style.display = 'block';
+                placeholder.style.display = 'none';
+            }
+        }
+        
+        // Uncomment and set your video URL here:
+        // loadVideoAd('YOUR_VIDEO_URL_HERE');
+    </script>
+    -->
 </body>
 </html>
