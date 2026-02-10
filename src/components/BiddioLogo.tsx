@@ -27,7 +27,7 @@ export const BiddioLogo = ({
       />
       
       {/* Play button in the center of B */}
-      <g role="img" aria-label="Play button icon">
+      <g aria-hidden="true">
         <circle cx="50" cy="50" r="16" fill="#0a0a0a" opacity="0.9"/>
         <polygon 
           points="46,42 46,58 60,50" 
