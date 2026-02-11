@@ -63,12 +63,13 @@ Created organized file structure:
 
 ```
 website/
-├── index.html                    # Main entry point (NEW)
-├── biddiowebpagecode.html       # Updated with countdown
-├── countdown-test.html          # Standalone test page (NEW)
-├── README.md                    # Deployment guide (NEW)
-├── .gitignore                   # Git ignore rules (NEW)
-└── biddiowebpagecode.html.bak  # Backup (excluded from git)
+├── index.html                      # Main entry point
+├── examples/
+│   ├── legacy-biddio.html          # Archived duplicate of the main page
+│   ├── countdown-test.html         # Standalone test page
+│   └── demo.html                   # Logo component demo
+├── README.md                       # Deployment guide
+└── .gitignore                      # Git ignore rules
 ```
 
 ### 6. **Documentation** ✅
