@@ -19,11 +19,11 @@
 
 ### File Structure
 - [x] index.html created (main entry point)
-- [x] biddiowebpagecode.html updated
+- [x] Examples moved under /examples (legacy/test pages)
 - [x] README.md with deployment instructions
 - [x] IMPLEMENTATION_SUMMARY.md with change details
 - [x] .gitignore configured
-- [x] countdown-test.html for testing
+- [x] countdown-test.html available under /examples for testing
 
 ## Deployment Steps
 
@@ -57,7 +57,7 @@
 1. **Deploy from GitHub:**
    - Connect Netlify to your GitHub repository
    - Build command: (none needed - static site)
-   - Publish directory: `/`
+   - Publish directory: `/` (only `index.html` is needed; helper pages live in `/examples`)
    - Click Deploy
 
 2. **Configure:**
@@ -78,7 +78,6 @@
    ```
    Required files:
    - index.html
-   - (optional) biddiowebpagecode.html
    ```
 
 2. **Set as Default:**

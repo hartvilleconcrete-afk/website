@@ -13,8 +13,9 @@ Revolutionary video-first contractor bidding platform launching **February 23, 2
 ## Files
 
 - `index.html` - Main website entry point (recommended for deployment)
-- `biddiowebpagecode.html` - Identical copy of the website
-- `countdown-test.html` - Standalone countdown timer test page
+- `examples/legacy-biddio.html` - Archived copy of the site for reference only
+- `examples/countdown-test.html` - Standalone countdown timer test page
+- `examples/demo.html` - Minimal React/Tailwind demo for the logo component
 
 ## Deployment
 
@@ -92,7 +93,7 @@ Then visit: `http://localhost:8080`
 
 ### Countdown Test
 
-Open `countdown-test.html` to verify the countdown timer logic independently.
+Open `examples/countdown-test.html` to verify the countdown timer logic independently. These helper/example pages live under `examples/` so Netlify (or other hosts) only serves `index.html` by default.
 
 ## Post-Launch
 

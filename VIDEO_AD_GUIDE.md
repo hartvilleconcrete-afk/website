@@ -42,7 +42,7 @@ The section appears as a prominent video placeholder with:
 
 ### Option 1: Using the Helper Script (Easiest)
 
-1. Open `index.html` (or `biddiowebpagecode.html`)
+1. Open `index.html` (or `examples/legacy-biddio.html` if you need the archived copy)
 2. Scroll to the bottom, find the commented helper script
 3. Uncomment the script section (remove `<!--` and `-->`)
 4. Replace `YOUR_VIDEO_URL_HERE` with your video URL
@@ -192,7 +192,7 @@ Common ratios:
 ## Files Modified
 
 - ✅ `index.html` - Added video section CSS and HTML
-- ✅ `biddiowebpagecode.html` - Added video section CSS and HTML
+- ✅ `examples/legacy-biddio.html` - Archived copy with the same video section
 
 Both files have identical video section implementations.
 
