@@ -531,6 +531,24 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
+            display: inline-flex;
+            align-items: baseline;
+            gap: 0.35rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .countdown-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .countdown-text {
+            color: var(--color-accent);
         }
 
         .countdown-subtitle {
@@ -1380,7 +1398,10 @@
 
     <!-- Countdown Section -->
     <section class="countdown-section">
-        <h2 class="countdown-title">Launching Soon</h2>
+        <h2 class="countdown-title">
+            <span class="countdown-brand">BIDDIO</span>
+            <span class="countdown-text">Launches Soon</span>
+        </h2>
         <p class="countdown-subtitle">Biddio goes live on February 23, 2026</p>
         <div id="countdown" class="countdown-timer">
             <div class="countdown-box">
