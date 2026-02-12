@@ -646,6 +646,10 @@
             gap: 3rem;
         }
 
+        .dual-track-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         .feature-card {
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.08);
@@ -708,6 +712,24 @@
             line-height: 1.7;
             position: relative;
             z-index: 1;
+        }
+
+        .step-list {
+            margin: 0;
+            padding-left: 1.2rem;
+            color: var(--color-text-muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .step-list li:last-child {
+            margin-bottom: 0;
         }
 
         /* Stats Section */
@@ -1300,6 +1322,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .dual-track-grid {
+                grid-template-columns: 1fr;
+            }
+
             .section-header h2 {
                 font-size: 2.5rem;
             }
@@ -1504,12 +1530,12 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1>
-                    The Future of <span class="highlight">Contractor Bidding</span>
+                    Your Home Project,
+                    <span class="highlight">Made Simple</span>
                 </h1>
                 <p>
-                    Revolutionary video-first marketplace connecting homeowners with verified contractors. 
-                    Get transparent bids, understand pricing differences, and make informed decisions 
-                    with AI-powered project analysis.
+                    <strong>Homeowners:</strong> Stop overpaying with AI-powered price clarity.<br>
+                    <strong>Contractors:</strong> Get detailed video scopes and win jobs with transparent bids.
                 </p>
             </div>
             <div class="hero-visual">
@@ -1521,9 +1547,9 @@
                     <div class="phone-screen">
                         <div class="phone-steps">
                             <span class="step active">1. RECORD</span>
-                            <span class="step">2. REVIEW</span>
-                            <span class="step">3. AI SCAN</span>
-                            <span class="step">4. FINISH</span>
+                            <span class="step">2. AI ESTIMATE</span>
+                            <span class="step">3. COMPARE</span>
+                            <span class="step">4. HIRE</span>
                         </div>
                         
                         <div class="video-preview">
@@ -1550,11 +1576,40 @@
         </div>
     </section>
 
+    <!-- How It Works Section -->
+    <section class="features how-it-works">
+        <div class="section-header reveal">
+            <h2>How Biddio Works</h2>
+            <p>Clear, parallel paths for homeowners and contractors to meet with confidence.</p>
+        </div>
+        <div class="features-grid dual-track-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon">🏠</div>
+                <h3>For Homeowners</h3>
+                <ol class="step-list">
+                    <li>Record your project</li>
+                    <li>Get AI-powered estimates</li>
+                    <li>Compare transparent bids</li>
+                    <li>Hire with confidence</li>
+                </ol>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">🛠️</div>
+                <h3>For Contractors</h3>
+                <ol class="step-list">
+                    <li>Browse real video projects</li>
+                    <li>Submit competitive bids</li>
+                    <li>Win jobs with transparency</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="section-header reveal">
-            <h2>Revolutionizing Contractor Selection</h2>
-            <p>Everything you need to find the right contractor, understand pricing, and make confident hiring decisions</p>
+            <h2>Price Your Project with Confidence</h2>
+            <p>Get clear bids, understand the real costs, and hire contractors you can trust.</p>
         </div>
         <div class="features-grid">
             <div class="feature-card reveal">
@@ -1570,22 +1625,47 @@
             <div class="feature-card reveal">
                 <div class="feature-icon">✅</div>
                 <h3>Verified Contractors</h3>
-                <p>See licensing status, insurance coverage, and business overhead transparency. Know exactly who you're hiring.</p>
+                <p>See licensing status, insurance coverage, and business overhead transparency so you know exactly who you're hiring.</p>
             </div>
             <div class="feature-card reveal">
                 <div class="feature-icon">💰</div>
                 <h3>Transparent Pricing</h3>
-                <p>Understand why bids differ. See the breakdown of labor, materials, overhead, and profit margins for informed decisions.</p>
+                <p>Ever wonder why one quote is $3K and another is $12K? See exactly where your money goes—labor, materials, overhead, and profit.</p>
             </div>
             <div class="feature-card reveal">
                 <div class="feature-icon">⚡</div>
                 <h3>Real-Time Bidding</h3>
-                <p>Get competitive bids within hours, not days. Watch contractors respond and refine their proposals in real-time.</p>
+                <p>No more waiting days for callbacks. Get competitive bids within hours as contractors respond and refine their proposals in real time.</p>
             </div>
             <div class="feature-card reveal">
                 <div class="feature-icon">🏆</div>
                 <h3>Quality Matching</h3>
                 <p>Our system matches you with contractors based on project complexity, budget, and verified past performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="features use-cases">
+        <div class="section-header reveal">
+            <h2>Homeowner Projects We See Every Day</h2>
+            <p>Planning a remodel or upgrade? Biddio helps you price it before you hire.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon">🍳</div>
+                <h3>Planning a Kitchen Remodel?</h3>
+                <p>Capture cabinets, countertops, and layout changes so every bid covers the same scope.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">🌲</div>
+                <h3>Need a Deck Built?</h3>
+                <p>Record the yard, elevations, and access points to compare materials and labor side by side.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">🛁</div>
+                <h3>Bathroom Renovation?</h3>
+                <p>Show plumbing locations and finishes once, then review transparent bids without the guesswork.</p>
             </div>
         </div>
     </section>
@@ -1620,8 +1700,8 @@
     <!-- CTA Section / Beta Signup -->
     <section id="download" class="cta-section">
         <div class="cta-content">
-            <h2>Join the Beta</h2>
-            <p>Be among the first to experience the future of contractor bidding. Request early access today.</p>
+            <h2>See What Your Project Should Cost</h2>
+            <p>Get your first free AI project analysis and compare transparent bids. Contractors can request early access too.</p>
             
             <div id="beta-container">
                 <form id="captureForm">
@@ -1647,7 +1727,7 @@
                     <div style="margin-bottom: 20px;">
                         <textarea name="useCase" placeholder="How do you plan to use the app?" rows="3" required></textarea>
                     </div>
-                    <button type="submit" id="submitBtn">Submit Request</button>
+                    <button type="submit" id="submitBtn">Get My Free Project Analysis</button>
                 </form>
                 <div id="successMsg" style="display: none; text-align: center; padding: 40px 20px; color: #28a745; font-weight: bold; font-size: 1.3rem;">
                     ✓ Success! Your info has been added to our beta list.
