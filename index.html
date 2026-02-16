@@ -978,6 +978,29 @@
             color: white;
         }
 
+        .checkbox-group {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--color-accent);
+            cursor: pointer;
+        }
+
         #submitBtn {
             width: 100%;
             padding: 1rem 2rem;
@@ -1496,6 +1519,42 @@
         </ul>
     </nav>
 
+    <!-- CTA Section / Early Access + Giveaway -->
+    <section id="download" class="cta-section">
+        <div class="cta-content">
+            <h2>Early Access + Giveaway</h2>
+            <p>Join the early access list to unlock the app when it releases. Homeowners and contractors are welcome.</p>
+            
+            <div id="beta-container">
+                <form id="captureForm">
+                    <div style="margin-bottom: 15px;">
+                        <input type="text" name="owner" placeholder="Name" required>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="checkbox-group" style="margin-bottom: 20px;">
+                        <label>
+                            <input type="checkbox" name="isContractor" value="true">
+                            I am a contractor.
+                        </label>
+                        <label>
+                            <input type="checkbox" name="isHomeowner" value="true">
+                            I am a homeowner.
+                        </label>
+                    </div>
+                    <button type="submit" id="submitBtn">Unlock My Early Access</button>
+                </form>
+                <div id="successMsg" style="display: none; text-align: center; padding: 40px 20px; color: #28a745; font-weight: bold; font-size: 1.3rem;">
+                    ✓ Success! Your info has been added to our early access list.
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Countdown Section -->
     <section class="countdown-section">
         <h2 class="countdown-title">
@@ -1692,45 +1751,6 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                 </iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section / Beta Signup -->
-    <section id="download" class="cta-section">
-        <div class="cta-content">
-            <h2>Unlock Access When We Launch</h2>
-            <p>Join the early access list to unlock the app when it releases. Homeowners and contractors are welcome.</p>
-            
-            <div id="beta-container">
-                <form id="captureForm">
-                    <div style="margin-bottom: 15px;">
-                        <select name="userType" required>
-                            <option value="" disabled selected>How would you use Biddio?</option>
-                            <option value="Homeowner">Homeowner</option>
-                            <option value="Contractor">Contractor</option>
-                        </select>
-                    </div>
-                    <div style="margin-bottom: 15px;">
-                        <input type="text" name="company" placeholder="Company Name (if applicable)">
-                    </div>
-                    <div style="margin-bottom: 15px;">
-                        <input type="text" name="owner" placeholder="Name" required>
-                    </div>
-                    <div style="margin-bottom: 15px;">
-                        <input type="email" name="email" placeholder="Email Address" required>
-                    </div>
-                    <div style="margin-bottom: 15px;">
-                        <input type="tel" name="phone" placeholder="Phone Number" required>
-                    </div>
-                    <div style="margin-bottom: 20px;">
-                        <textarea name="useCase" placeholder="What types of projects do you see yourself using biddio for?" rows="3" required></textarea>
-                    </div>
-                    <button type="submit" id="submitBtn">Unlock My Early Access</button>
-                </form>
-                <div id="successMsg" style="display: none; text-align: center; padding: 40px 20px; color: #28a745; font-weight: bold; font-size: 1.3rem;">
-                    ✓ Success! Your info has been added to our early access list.
-                </div>
             </div>
         </div>
     </section>
