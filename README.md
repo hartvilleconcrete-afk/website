@@ -1,6 +1,6 @@
 # Biddio Launch Website
 
-Revolutionary video-first contractor bidding platform launching **March 2, 2026**.
+Revolutionary video-first contractor bidding platform launching **February 26, 2026**.
 
 ## Features
 
@@ -52,12 +52,12 @@ If using a custom domain (e.g., `biddio.com`):
 
 ### Countdown Date
 
-The countdown is set to **March 2, 2026 at midnight**.
+The countdown is set to **February 26, 2026 at midnight**.
 
 To change the launch date, edit the JavaScript in `index.html`:
 
 ```javascript
-const launchDate = new Date('2026-03-02T00:00:00').getTime();
+const launchDate = new Date('2026-02-26T00:00:00').getTime();
 ```
 
 ### Beta Signup Form
@@ -97,7 +97,7 @@ Open `examples/countdown-test.html` to verify the countdown timer logic independ
 
 ## Post-Launch
 
-After March 2, 2026:
+After February 26, 2026:
 - Countdown automatically hides
 - "🎉 Biddio is Now Live! 🎉" message displays
 - Consider redirecting to the live app
