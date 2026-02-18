@@ -1,7 +1,7 @@
 {
   "name": "biddio-website",
   "version": "1.0.0",
-  "description": "Biddio - Revolutionary video-first contractor bidding platform launching February 23, 2026",
+  "description": "Biddio - Revolutionary video-first contractor bidding platform launching February 26, 2026",
   "type": "module",
   "scripts": {
     "dev": "vite",
